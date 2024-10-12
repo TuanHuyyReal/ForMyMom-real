@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@keyframes show {
+    from {
+        opacity: 0;
+    }to {
+        opacity: 1;
+    }
+}
+:root{
+    --bgColor: aliceblue;
+    --textColor: #3467b4;
+    --textContent: #0a3a83;
+    --titleColor: #7a99cf;
+    --darkBgColor: #829dc0;
+    --hoverColor: #23467a;
+}
+*{
+    margin:  0;
+    padding:  0;
+    box-sizing: border-box;
+    font-family: 'Lobster Two', monospace;
+    background-color: aliceblue;
+    scroll-behavior: smooth;
+}
+/* body{
+    animation: show .5s ease-in-out;
+} */
+h1{
+    color: var(--titleColor) !important;
+    text-align: center !important;
+}
+.mainContainer{
+    max-width: fit-content;
+    transition: all .5s ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.smallTitle{
+    color: var(--textColor);
+    font-size: 40px;
+    
+}
+h2{
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+#mainContainer .text{
+    font-size: 30px;
+    font-family: "Questial";
+}
+.messageContain{
+    padding: 50px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+.mes {
+    font-size: 30px;
+    color: var(--textColor);
+}
+
+img{
+    height: 20vh;
+    display: flex;
+}
+/* Button style */
+.btnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#showBtn{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    font-size: 30px;
+    background-color: var(--titleColor);
+    height: 30px;
+    border: var(--titleColor) 2px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .5s;
+}
+#showBtn:hover{
+    background-color: var(--hoverColor);
+    color:azure;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.smallTitle{
+    font-family: 'Questrial';
+}
+
+
+.text{
+    background-color: var(--darkBgColor);
+    color: #fff;
+    padding: 20px 10px;
+    border-radius: 12px;
+    width: 50%;
+    margin-left: 300px;
+}
+section{
+    gap: 20px;
+}
+img{
+    border-radius: 10px;
+    margin-right: 200px;
+}
+
+#loiChuc{
+    margin: 70px 200px;
+}
+
+@media only screen and (max-width: 768px) {
+    section{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .text{
+        width: 80%;
+        margin: auto 0;
+    }
+    img{
+        width: 80%;
+        height: 50%;
+        margin: auto 0;
+    }
+    #loiChuc{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    section{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .text, img{
+        width: 90%;
+        margin: 12px;
+    }
+    img{
+        height: 65%;
+    }
+    #loiChuc{
+        margin: 0;
+    }
+}
